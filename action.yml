@@ -1,0 +1,46 @@
+name: 'Commit Message Linter'
+description: 'Enforce conventional commit standards and provide helpful feedback on commit messages'
+author: 'rkneela0912'
+
+inputs:
+  github_token:
+    description: 'GitHub token for API access'
+    required: true
+  pattern:
+    description: 'Regex pattern for valid commit messages'
+    default: '^(feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert)(\(.+\))?: .{1,100}'
+    required: false
+  error_message:
+    description: 'Custom error message when validation fails'
+    default: |
+      ❌ Invalid commit message format!
+      
+      Please use conventional commits format:
+      `type(scope): description`
+      
+      Examples:
+      - feat: add user authentication
+      - fix(api): resolve timeout issue
+      - docs: update README
+      
+      Valid types: feat, fix, docs, style, refactor, perf, test, chore, build, ci, revert
+    required: false
+  fail_on_error:
+    description: 'Fail the workflow if commit messages are invalid'
+    default: 'true'
+    required: false
+
+outputs:
+  valid:
+    description: 'Whether all commit messages are valid'
+  invalid_count:
+    description: 'Number of invalid commit messages'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'check-circle'
+  color: 'green'
+

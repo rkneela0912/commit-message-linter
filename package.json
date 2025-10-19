@@ -1,0 +1,28 @@
+{
+  "name": "commit-message-linter",
+  "version": "1.0.0",
+  "description": "Enforce conventional commit message standards with helpful feedback",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist --source-map --license licenses.txt"
+  },
+  "keywords": [
+    "github-action",
+    "commit-message",
+    "conventional-commits",
+    "linter",
+    "code-quality",
+    "git",
+    "automation"
+  ],
+  "author": "rkneela0912",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.1",
+    "@actions/github": "^6.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.1"
+  }
+}
+
