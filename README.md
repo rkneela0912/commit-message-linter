@@ -253,3 +253,12 @@ For issues or questions, [open an issue](https://github.com/rkneela0912/commit-m
 - **Better Changelogs:** Automated generation
 - **Team Alignment:** Shared conventions
 - **Easy Navigation:** Find changes quickly
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- 🐛 Report bugs
+- 💡 Suggest features
+- 🔧 Submit pull requests
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
