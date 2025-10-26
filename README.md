@@ -246,3 +246,10 @@ Contributions welcome! Please open an issue or submit a pull request.
 
 For issues or questions, [open an issue](https://github.com/rkneela0912/commit-message-linter/issues).
 
+
+## ✨ Benefits
+
+- **Clean History:** Consistent commit messages
+- **Better Changelogs:** Automated generation
+- **Team Alignment:** Shared conventions
+- **Easy Navigation:** Find changes quickly
